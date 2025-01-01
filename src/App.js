@@ -1,11 +1,15 @@
 import React from 'react';
-import Countries from './countries';
+import CountriesDropdown from './worldMap';
 
 
 function App() {
   return (
-    <div className="App">
-      <Countries name={Countries.name} flagUrl={Countries.flag} key={Countries.abbr}/>
+    <div className="App" style={{
+      display: 'flex',
+      justifyContent: 'center',
+      height: '100vh',
+    }}>
+      <CountriesDropdown/>
     </div>
   );
 }
